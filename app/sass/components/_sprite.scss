@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-bar-name: 'icon-bar';
+$icon-bar-x: 37px;
+$icon-bar-y: 94px;
+$icon-bar-offset-x: -37px;
+$icon-bar-offset-y: -94px;
+$icon-bar-width: 33px;
+$icon-bar-height: 24px;
+$icon-bar-total-width: 137px;
+$icon-bar-total-height: 122px;
+$icon-bar-image: '../image/sprite.png';
+$icon-bar: (37px, 94px, -37px, -94px, 33px, 24px, 137px, 122px, '../image/sprite.png', 'icon-bar', );
+$icon-basket-big-name: 'icon-basket-big';
+$icon-basket-big-x: 0px;
+$icon-basket-big-y: 0px;
+$icon-basket-big-offset-x: 0px;
+$icon-basket-big-offset-y: 0px;
+$icon-basket-big-width: 56px;
+$icon-basket-big-height: 49px;
+$icon-basket-big-total-width: 137px;
+$icon-basket-big-total-height: 122px;
+$icon-basket-big-image: '../image/sprite.png';
+$icon-basket-big: (0px, 0px, 0px, 0px, 56px, 49px, 137px, 122px, '../image/sprite.png', 'icon-basket-big', );
+$icon-basket-shop-name: 'icon-basketShop';
+$icon-basket-shop-x: 0px;
+$icon-basket-shop-y: 94px;
+$icon-basket-shop-offset-x: 0px;
+$icon-basket-shop-offset-y: -94px;
+$icon-basket-shop-width: 32px;
+$icon-basket-shop-height: 28px;
+$icon-basket-shop-total-width: 137px;
+$icon-basket-shop-total-height: 122px;
+$icon-basket-shop-image: '../image/sprite.png';
+$icon-basket-shop: (0px, 94px, 0px, -94px, 32px, 28px, 137px, 122px, '../image/sprite.png', 'icon-basketShop', );
+$icon-facebook-name: 'icon-facebook';
+$icon-facebook-x: 0px;
+$icon-facebook-y: 54px;
+$icon-facebook-offset-x: 0px;
+$icon-facebook-offset-y: -54px;
+$icon-facebook-width: 35px;
+$icon-facebook-height: 35px;
+$icon-facebook-total-width: 137px;
+$icon-facebook-total-height: 122px;
+$icon-facebook-image: '../image/sprite.png';
+$icon-facebook: (0px, 54px, 0px, -54px, 35px, 35px, 137px, 122px, '../image/sprite.png', 'icon-facebook', );
+$icon-google-name: 'icon-google-';
+$icon-google-x: 40px;
+$icon-google-y: 54px;
+$icon-google-offset-x: -40px;
+$icon-google-offset-y: -54px;
+$icon-google-width: 35px;
+$icon-google-height: 35px;
+$icon-google-total-width: 137px;
+$icon-google-total-height: 122px;
+$icon-google-image: '../image/sprite.png';
+$icon-google-: (40px, 54px, -40px, -54px, 35px, 35px, 137px, 122px, '../image/sprite.png', 'icon-google-', );
+$icon-rss-name: 'icon-rss';
+$icon-rss-x: 102px;
+$icon-rss-y: 0px;
+$icon-rss-offset-x: -102px;
+$icon-rss-offset-y: 0px;
+$icon-rss-width: 35px;
+$icon-rss-height: 35px;
+$icon-rss-total-width: 137px;
+$icon-rss-total-height: 122px;
+$icon-rss-image: '../image/sprite.png';
+$icon-rss: (102px, 0px, -102px, 0px, 35px, 35px, 137px, 122px, '../image/sprite.png', 'icon-rss', );
+$icon-search-name: 'icon-search';
+$icon-search-x: 75px;
+$icon-search-y: 94px;
+$icon-search-offset-x: -75px;
+$icon-search-offset-y: -94px;
+$icon-search-width: 28px;
+$icon-search-height: 22px;
+$icon-search-total-width: 137px;
+$icon-search-total-height: 122px;
+$icon-search-image: '../image/sprite.png';
+$icon-search: (75px, 94px, -75px, -94px, 28px, 22px, 137px, 122px, '../image/sprite.png', 'icon-search', );
+$icon-star-small-name: 'icon-star-small';
+$icon-star-small-x: 80px;
+$icon-star-small-y: 54px;
+$icon-star-small-offset-x: -80px;
+$icon-star-small-offset-y: -54px;
+$icon-star-small-width: 11px;
+$icon-star-small-height: 10px;
+$icon-star-small-total-width: 137px;
+$icon-star-small-total-height: 122px;
+$icon-star-small-image: '../image/sprite.png';
+$icon-star-small: (80px, 54px, -80px, -54px, 11px, 10px, 137px, 122px, '../image/sprite.png', 'icon-star-small', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 102px;
+$icon-twitter-y: 40px;
+$icon-twitter-offset-x: -102px;
+$icon-twitter-offset-y: -40px;
+$icon-twitter-width: 35px;
+$icon-twitter-height: 35px;
+$icon-twitter-total-width: 137px;
+$icon-twitter-total-height: 122px;
+$icon-twitter-image: '../image/sprite.png';
+$icon-twitter: (102px, 40px, -102px, -40px, 35px, 35px, 137px, 122px, '../image/sprite.png', 'icon-twitter', );
+$icon-vk-name: 'icon-vk';
+$icon-vk-x: 61px;
+$icon-vk-y: 0px;
+$icon-vk-offset-x: -61px;
+$icon-vk-offset-y: 0px;
+$icon-vk-width: 36px;
+$icon-vk-height: 35px;
+$icon-vk-total-width: 137px;
+$icon-vk-total-height: 122px;
+$icon-vk-image: '../image/sprite.png';
+$icon-vk: (61px, 0px, -61px, 0px, 36px, 35px, 137px, 122px, '../image/sprite.png', 'icon-vk', );
+$spritesheet-width: 137px;
+$spritesheet-height: 122px;
+$spritesheet-image: '../image/sprite.png';
+$spritesheet-sprites: ($icon-bar, $icon-basket-big, $icon-basket-shop, $icon-facebook, $icon-google-, $icon-rss, $icon-search, $icon-star-small, $icon-twitter, $icon-vk, );
+$spritesheet: (137px, 122px, '../image/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

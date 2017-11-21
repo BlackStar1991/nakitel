@@ -1,0 +1,182 @@
+
+.header{
+  width: 100%;
+  padding-top: 8px;
+  min-height: 45px;
+  box-shadow: 0 5px 5px rgba(16, 16, 15, 0.5);
+  background-color: $color_red;
+}
+
+.button_navigation{
+  position: relative;
+  //margin-top: 12px;
+  width: 32px;
+  height: 23px;
+  border:none;
+  box-sizing: border-box;
+  border-radius:50%;
+  outline:none;
+  background: none;
+  padding: 2px;
+}
+
+.icon-bar{
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-bar);
+    z-index:2;
+  }
+}
+
+.bl_navigation{
+  position: relative;
+  width: 100%;
+}
+
+
+.bl_navigation__full{
+  position: absolute;
+  top: 34px;
+  left: 0;
+  padding: 22px;
+  width: 201px;
+  min-height: 242px;
+  background-color: #000;
+  opacity: 0.85;
+  z-index:5;
+}
+.bl_navigation__item{
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+.bl_navigation__link{
+  display: block;
+  width: 100%;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  &:hover,
+  &:focus{
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.decor_triangleUp{
+  &:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    @include triangle(up, $size: 10px, $color: #f00);
+    opacity: 0.85;
+  }
+
+}
+
+
+/////
+.bl_basket{
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 134px;
+}
+
+.icon_basket{
+  float: left;
+  @include sprite($icon-basket-shop);
+}
+
+.bl_basket__text{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+//////////
+.bl_language{
+  float: right;
+  margin-left: 27px;
+  min-width: 70px;
+  height: 100%;
+}
+
+.bl_language__label{
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+  background-color: #992727;
+  cursor: pointer;
+}
+.bl_language__radio{
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.bl_language__text{
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #ff3f3e;
+}
+.bl_language__radio:checked + .bl_language__text{
+  color: #fff;
+}
+
+.bl_search{
+  position: relative;
+  float: right;
+
+  width: 95%;
+  max-width: 270px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.bl_search__field{
+  width: 100%;
+  padding-right: 30px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px #000000;
+  background-color: #992727;
+
+  text-indent: 7px;
+  color: #fff;
+  outline: none;
+  border: none;
+  &::placeholder{
+    padding-left: 7px;
+    color: #ff3f3e;
+    font-family: $HelveticaNeue;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+.bl_search__button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: none;
+  &:after{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    content: '';
+    @include sprite($icon-search);
+  }
+}
