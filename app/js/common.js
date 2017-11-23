@@ -3,6 +3,14 @@ window.onload = function() {
     var blackWrapper = $(".blackWrapper"),
         body = $("body");
 
+    var buttonNavigation = $(".button_navigation"),
+        arreaNavigation = $(".bl_navigation");
+
+    buttonNavigation.on("click", function () {
+        arreaNavigation.toggleClass("hidden");
+    });
+
+
 
 //    Discount Products  - Скидки
 
@@ -12,9 +20,10 @@ window.onload = function() {
            nav: false,
            navText: true,
            dots: true,
+           center:true,
+           // dotsEach:true,
            autoplay: false,
            stopOnHover: true,
-           // margin: 20,
            smartSpeed: 1000,
            autoplayTimeout: 4000,
            pagination: false,
@@ -22,23 +31,24 @@ window.onload = function() {
            responsive: {
                1200: {
                    items: 5
+
                },
                991: {
                    items: 3
+
                },
                550: {
-                   items: 2,
-                   margin: 5
+                   items: 2
+
                },
                450: {
-                   margin: 0,
-                   items: 1,
-                   center: true
+                   items: 1
+
                },
 
                320: {
-                   items: 1,
-                   center: true
+                   items: 1
+
                }
 
            }

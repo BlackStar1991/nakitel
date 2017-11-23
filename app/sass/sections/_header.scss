@@ -84,7 +84,8 @@
 /////
 .bl_basket{
   position: relative;
-  float: right;
+  display: block;
+  left: 63px;
   height: 100%;
   width: 134px;
 }
@@ -103,7 +104,6 @@
 //////////
 .bl_language{
   float: right;
-  margin-left: 27px;
   min-width: 70px;
   height: 100%;
 }
@@ -141,7 +141,7 @@
   float: right;
 
   width: 95%;
-  max-width: 270px;
+  max-width: 234px;
   height: 30px;
   line-height: 30px;
 }

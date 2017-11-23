@@ -100,10 +100,10 @@
     <div class="mainWrapper">
 
 
-        <div class="bl_global">
-            <div class="container">
+        <div class="bl_global clearfix">
+            <div class="container clearfix">
                 <div class="col-xs-12">
-                    <div class="bl_global__inner clearfix">
+                    <div class="bl_global__inner">
                         <div class="bl_controls">
                             <a class="bl_controls__enter" href="#">Войти на сайт </a>
                             <a class="bl_controls__registration" href="#">Зарегистрироваться </a>
@@ -115,7 +115,7 @@
                                 <a href="#" class="bl_soc__link bl_soc__google" data-network=""></a>
                             </div>
 
-                            <a class="bl_bigBasket" href="#">
+                            <a class="bl_bigBasket hidden-xs hidden-sm" href="#">
                                 <div class="bl_bigBasket__icon"></div>
                                 <p class="bl_bigBasket__text">Корзина</p>
                                 <p class="bl_basket__text">
@@ -133,12 +133,12 @@
                         <div class="bl_logo">
                             <a class="bl_logo__link" href="#">
                                 <img class="bl_logo__img" src="image/logo.png" alt="nakitel">
-                                <p class="bl_logo__title">nakitel</p>
+                                <h1 class="bl_logo__title">nakitel</h1>
                             </a>
                         </div>
                         <div class="bl_information">
                             <p class="bl_information__text">Телефон горячей линии  </p>
-                            <a class="bl_information__tel" href="tel: +12(034)5678910">+12(034) 567 89 10</a>
+                            <a class="bl_information__tel" href="tel: +120345678910">+12(034) 567 89 10</a>
                             <p class="bl_information__data">(пн.- пт. с 9.00 до 18.00)</p>
                             <button class="bl_information__button" type="button">
                                 <span class="big">вызнвать</span>
@@ -152,70 +152,293 @@
 
         </div>
 
-        <div class="container">
-            <div class="col-xs-12">
-                <div class="product_slider clearfix">
-                    <ul class="product_slider__full owl-slider">
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_1.png" alt="door1">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door2">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door3">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_4.png" alt="door4">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_5.png" alt="door5">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                        <li class="product_slider__item">
-                            <a href="#" class="product_slider__link">
-                                <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
-                                <p class="product_slider__name">двери</p>
-                                <p class="product_slider__material">шпонированные</p>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="bl_paper">
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="product_slider clearfix">
+                        <ul class="product_slider__full owl-carousel">
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_1.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door2">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">экошпон</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door3">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">из массива</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_4.png" alt="door4">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">входные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_5.png" alt="door5">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">спец назначения</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="bl_banner">
+                        <img class="bl_banner__img" src="image/img_1.png" alt="house">
+                        <p class="bl_banner__text">Дверь на дачу</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <p class="bl_aboutCompany__title clearfix">О компании</p>
+
+
+            <div class="bl_aboutCompany">
+                <div class="container">
+                    <div class="col-md-2">
+                        <nav class="bl_aboutCompany__navigation">
+                            <ul class="bl_aboutCompany__fullNavigation">
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">главная</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link active"
+                                                                     href="#">о компании</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link"
+                                                                     href="#">каталог продукции</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link"
+                                                                     href="#">оплата / доставка</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">акции</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">гарантия</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="bl_ceo">
+                            <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей
+                                активности позволяет оценить значение существенных финансовых и административных
+                                условий. Значимость этих проблем настолько очевидна, что консультация с широким активом
+                                представляет собой интересный эксперимент проверки направлений прогрессивного
+                                развития.</p>
+
+                            <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за
+                                собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным
+                                потребностям. </p>
+
+                            <p>Таким образом сложившаяся структура организации требуют определения и уточнения
+                                направлений прогрессивного развития. С другой стороны сложившаяся структура организации
+                                способствует подготовки и реализации системы обучения кадров, соответствует насущным
+                                потребностям. Значимость этих проблем настолько очевидна, что укрепление и развитие
+                                структуры влечет за собой процесс внедрения и модернизации соответствующий условий
+                                активизации. </p>
+
+                            <p>С другой стороны начало повседневной работы по формированию позиции позволяет оценить
+                                значение дальнейших направлений развития. Идейные соображения высшего порядка, а также
+                                реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации
+                                позиций, занимаемых участниками в отношении поставленных задач. С другой стороны начало
+                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                проверки новых предложений. Равным образом рамки и место обучения кадров в значительной
+                                степени обуславливает создание системы обучения кадров, соответствует насущным
+                                потребностям.</p>
+
+                            <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в
+                                значительной степени обуславливает создание системы обучения кадров, соответствует
+                                насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров
+                                обеспечивает широкому кругу (специалистов) участие в формировании модели развития.</p>
+
+                            <p>Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные
+                                задания по разработке систем массовогоу частия.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="banner_zone">
+                            <div class="banner_zone__first">
+                                <p class="banner_zone__text">Телефон горячей линии  </p>
+                                <a class="banner_zone__tel" href="tel: +380674027101">+38(067) 402 71 01</a>
+                                <p class="banner_zone__data">(пн.- пт. с 9.00 до 18.00)</p>
+                                <button class="banner_zone__callMaster" type="button">
+                                    <span class="big">вызнвать</span>
+                                    <span>замерщика</span>
+                                </button>
+                            </div>
+
+                            <a href="" class="banner_arrea">
+                                <div class="bl_wrappen">
+                                    <p class="banner_arrea__big">Банерная <span>область</span></p>
+                                </div>
+                            </a>
+                            <div class="banner_zone__first">
+                                <p class="banner_zone__text">Телефон горячей линии  </p>
+                                <a class="banner_zone__tel" href="tel: +380674027101">+38(067) 402 71 01</a>
+                                <p class="banner_zone__data">(пн.- пт. с 9.00 до 18.00)</p>
+                                <button class="banner_zone__callMaster" type="button">
+                                    <span class="big">вызнвать</span>
+                                    <span>замерщика</span>
+                                </button>
+                            </div>
+
+                            <a href="" class="banner_arrea">
+                                <div class="bl_wrappen">
+                                    <p class="banner_arrea__big">Банерная <span>область</span></p>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </main>
 <!-- ---------------------------------------- FOOTER --------------------------------------------------------- -->
 <footer class="footer">
+    <div class="bl_global2">
+        <div class="footer_line">
+            <div class="container">
+                <div class="col-xs-12">
 
+                    <div class="footer_copiraite">
+                        <span class="footer_copiraite__text">Nakitel ©2014</span>
+                    </div>
+
+
+                    <nav class="footer_navigation">
+                        <ul class="footer_navigation__full">
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Контакты</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Акциия</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Каталог</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#"
+                                                                   class="footer_navigation__link">Оплата / Доставка</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Гаранти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <div class="blackWrapper hidden"></div>

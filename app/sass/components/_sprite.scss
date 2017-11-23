@@ -86,17 +86,6 @@ $icon-search-total-width: 137px;
 $icon-search-total-height: 122px;
 $icon-search-image: '../image/sprite.png';
 $icon-search: (75px, 94px, -75px, -94px, 28px, 22px, 137px, 122px, '../image/sprite.png', 'icon-search', );
-$icon-star-small-name: 'icon-star-small';
-$icon-star-small-x: 80px;
-$icon-star-small-y: 54px;
-$icon-star-small-offset-x: -80px;
-$icon-star-small-offset-y: -54px;
-$icon-star-small-width: 11px;
-$icon-star-small-height: 10px;
-$icon-star-small-total-width: 137px;
-$icon-star-small-total-height: 122px;
-$icon-star-small-image: '../image/sprite.png';
-$icon-star-small: (80px, 54px, -80px, -54px, 11px, 10px, 137px, 122px, '../image/sprite.png', 'icon-star-small', );
 $icon-twitter-name: 'icon-twitter';
 $icon-twitter-x: 102px;
 $icon-twitter-y: 40px;
@@ -122,7 +111,7 @@ $icon-vk: (61px, 0px, -61px, 0px, 36px, 35px, 137px, 122px, '../image/sprite.png
 $spritesheet-width: 137px;
 $spritesheet-height: 122px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($icon-bar, $icon-basket-big, $icon-basket-shop, $icon-facebook, $icon-google-, $icon-rss, $icon-search, $icon-star-small, $icon-twitter, $icon-vk, );
+$spritesheet-sprites: ($icon-bar, $icon-basket-big, $icon-basket-shop, $icon-facebook, $icon-google-, $icon-rss, $icon-search, $icon-twitter, $icon-vk, );
 $spritesheet: (137px, 122px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
