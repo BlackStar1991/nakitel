@@ -39,7 +39,7 @@
 
 .bl_navigation__full{
   position: absolute;
-  top: 34px;
+  top: 28px;
   left: 0;
   padding: 22px;
   width: 201px;
@@ -72,9 +72,9 @@
   &:after{
     content: "";
     position: absolute;
-    top: -10px;
-    left: 10px;
-    @include triangle(up, $size: 10px, $color: #f00);
+    top: -18px;
+    left: 8px;
+    @include triangle(up, $size: 18px, $color: rgba(0,0,0, .85));
     opacity: 0.85;
   }
 
@@ -144,7 +144,15 @@
   max-width: 234px;
   height: 30px;
   line-height: 30px;
+  transition: all ease-in .3s;
 }
+
+.bl_search.bl_search__active {
+  left: 0;
+  transition: all ease-in .3s;
+}
+
+
 
 .bl_search__field{
   width: 100%;
@@ -179,4 +187,14 @@
     content: '';
     @include sprite($icon-search);
   }
+}
+
+.btn_search__mobile{
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: #992727;
+  border: 1px solid #000;
+  margin-left: 20px;
 }

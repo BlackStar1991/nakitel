@@ -18,9 +18,55 @@
     <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
 
-    <link rel="stylesheet" href="css/libs.min.css">
+    <style>
+        html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+        body{margin:0}
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+        audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+        audio:not([controls]){display:none;height:0}
+        [hidden],template{display:none}
+        a{background-color:transparent}
+        a:active,a:hover{outline:0}
+        abbr[title]{border-bottom:1px dotted}
+        b,strong{font-weight:700}
+        dfn{font-style:italic}
+        h1{font-size:2em;margin:.67em 0}
+        mark{background:#ff0;color:#000}
+        small{font-size:80%}
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+        sup{top:-.5em}
+        sub{bottom:-.25em}
+        img{border:0}
+        svg:not(:root){overflow:hidden}
+        figure{margin:1em 40px}
+        hr{box-sizing:content-box;height:0}
+        pre{overflow:auto}
+        code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+        button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+        button{overflow:visible}
+        button,select{text-transform:none}
+        button,html input[type="button"],/* 1 */
+        input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+        button[disabled],html input[disabled]{cursor:default}
+        button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+        input{line-height:normal}
+        input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+        input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+        input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
+        input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+        fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+        legend{border:0;padding:0}
+        textarea{overflow:auto}
+        optgroup{font-weight:700}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th{padding:0}
+    </style>
 
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+
+
+
 
 </head>
 
@@ -33,7 +79,7 @@
 <![endif]-->
 
 <!-- ---------------------------------------- HEADER -------------------------------------------------------- -->
-<header id="header" class="header">
+<header id="header" class="header clearfix">
     <div class="mainWrapper">
         <div class="container">
             <div class="col-md-6">
@@ -51,11 +97,15 @@
                 </nav>
             </div>
             <div class="col-md-6 clearfix">
+              <div class="mob_controls">
 
-                <div class="bl_search">
+
+                  <button type="button" class="js-search btn_search__mobile bl_search__button"></button>
+
+                  <div class="bl_search">
                     <div class="bl_wrappen">
                         <input class="bl_search__field " type="text" placeholder="Поиск">
-                        <button class="bl_search__button"></button>
+                        <button type="button" class="bl_search__button"></button>
                     </div>
                 </div>
 
@@ -70,7 +120,6 @@
                         <span class="bl_language__text">ua</span>
                     </label>
                 </div>
-
                 <a class="bl_basket" href="#">
                     <div class="icon_basket"></div>
                     <p class="bl_basket__text">
@@ -82,7 +131,7 @@
                         <span>5.000 грн.</span>
                     </p>
                 </a>
-
+              </div>
             </div>
         </div>
 
@@ -93,22 +142,22 @@
     <div class="mainWrapper">
 
 
-        <div class="bl_global">
-            <div class="container">
+        <div class="bl_global clearfix">
+            <div class="container clearfix">
                 <div class="col-xs-12">
                     <div class="bl_global__inner">
                         <div class="bl_controls">
-                            <a class="bl_controls__enter"  href="#">Войти на сайт </a>
+                            <a class="bl_controls__enter" href="#">Войти на сайт </a>
                             <a class="bl_controls__registration" href="#">Зарегистрироваться </a>
-                            <div class="bl_socLinks">
-                                <a href="#" class="bl_soc__link" data-network=""></a>
-                                <a href="#" class="bl_soc__link" data-network=""></a>
-                                <a href="#" class="bl_soc__link" data-network=""></a>
-                                <a href="#" class="bl_soc__link" data-network=""></a>
-                                <a href="#" class="bl_soc__link" data-network=""></a>
+                            <div class="bl_socLinks hidden-xs">
+                                <a href="#" class="bl_soc__link bl_soc__twiter" data-network=""></a>
+                                <a href="#" class="bl_soc__link bl_soc__vk" data-network=""></a>
+                                <a href="#" class="bl_soc__link bl_soc__facebook" data-network=""></a>
+                                <a href="#" class="bl_soc__link bl_soc__ssh" data-network=""></a>
+                                <a href="#" class="bl_soc__link bl_soc__google" data-network=""></a>
                             </div>
 
-                            <a class="bl_bigBasket" href="#">
+                            <a class="bl_bigBasket hidden-xs hidden-sm" href="#">
                                 <div class="bl_bigBasket__icon"></div>
                                 <p class="bl_bigBasket__text">Корзина</p>
                                 <p class="bl_basket__text">
@@ -126,14 +175,256 @@
                         <div class="bl_logo">
                             <a class="bl_logo__link" href="#">
                                 <img class="bl_logo__img" src="image/logo.png" alt="nakitel">
-                                <p class="bl_logo__title">nakitel</p>
+                                <h1 class="bl_logo__title">nakitel</h1>
                             </a>
                         </div>
                         <div class="bl_information">
-                            <p class="bl_information__text">Телефон горячей линии  </p>
-                            <a class="bl_information__tel" href="tel: +12(034)5678910">+12(034) 567 89 10</a>
-                            <p class="bl_information__data">(пн.- пт. с 9.00 до 18.00)</p>
-                            <button class="bl_information__button" type="button">вызнвать замерщика</button>
+                            <p class="bl_information__text hidden-xs">Телефон горячей линии  </p>
+                            <a class="bl_information__tel hidden-xs" href="tel: +120345678910">+12(034) 567 89 10</a>
+                            <p class="bl_information__data hidden-xs">(пн.- пт. с 9.00 до 18.00)</p>
+                            <button class="bl_information__button" type="button">
+                                <span class="big">вызнвать</span>
+                                <span>замерщика</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bl_paper">
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="product_slider clearfix">
+                        <ul class="product_slider__full owl-carousel">
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_1.png" alt="door1">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_2.png" alt="door2">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">экошпон</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door3">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">из массива</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_4.png" alt="door4">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">входные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_5.png" alt="door5">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">спец назначения</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+                            <li class="product_slider__item">
+                                <a href="#" class="product_slider__link">
+                                    <img class="product_slider__img" src="image/Products/poduct_3.png" alt="door6">
+                                    <p class="product_slider__name">двери</p>
+                                    <p class="product_slider__material">шпонированные</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="bl_banner">
+                        <img class="bl_banner__img" src="image/img_1.png" alt="house">
+                        <p class="bl_banner__text">Дверь на дачу</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="bl_aboutCompany__title clearfix">О компании</p>
+
+
+            <div class="bl_aboutCompany">
+                <div class="container">
+                    <div class="col-md-2">
+                        <nav class="bl_aboutCompany__navigation">
+                            <ul class="bl_aboutCompany__fullNavigation">
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">главная</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link active"
+                                                                     href="#">о компании</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link"
+                                                                     href="#">каталог продукции</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link"
+                                                                     href="#">оплата / доставка</a></li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">акции</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">гарантия</a>
+                                </li>
+                                <li class="bl_aboutCompany__item"><a class="bl_aboutCompany__link" href="#">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="bl_ceo">
+                            <div class="bl_ceo__wrapper">
+                                <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей
+                                    активности позволяет оценить значение существенных финансовых и административных
+                                    условий. Значимость этих проблем настолько очевидна, что консультация с широким активом
+                                    представляет собой интересный эксперимент проверки направлений прогрессивного
+                                    развития.</p>
+
+                                <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за
+                                    собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным
+                                    потребностям. </p>
+
+                                <p>Таким образом сложившаяся структура организации требуют определения и уточнения
+                                    направлений прогрессивного развития. С другой стороны сложившаяся структура организации
+                                    способствует подготовки и реализации системы обучения кадров, соответствует насущным
+                                    потребностям. Значимость этих проблем настолько очевидна, что укрепление и развитие
+                                    структуры влечет за собой процесс внедрения и модернизации соответствующий условий
+                                    активизации. </p>
+
+                                <p>С другой стороны начало повседневной работы по формированию позиции позволяет оценить
+                                    значение дальнейших направлений развития. Идейные соображения высшего порядка, а также
+                                    реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации
+                                    позиций, занимаемых участниками в отношении поставленных задач. С другой стороны начало
+                                    повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                    проверки новых предложений. Равным образом рамки и место обучения кадров в значительной
+                                    степени обуславливает создание системы обучения кадров, соответствует насущным
+                                    потребностям.</p>
+
+                                <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в
+                                    значительной степени обуславливает создание системы обучения кадров, соответствует
+                                    насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров
+                                    обеспечивает широкому кругу (специалистов) участие в формировании модели развития.</p>
+
+                                <p>Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные
+                                    задания по разработке систем массовогоу частия.</p>
+                            </div>
+                            <button type="button" class="bl_ceo__showMore">Читать всё ...</button>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="banner_zone">
+                            <div class="banner_zone__first">
+                                <p class="banner_zone__text">Телефон горячей линии  </p>
+                                <a class="banner_zone__tel" href="tel: +380674027101">+38(067) 402 71 01</a>
+                                <p class="banner_zone__data">(пн.- пт. с 9.00 до 18.00)</p>
+                                <button class="banner_zone__callMaster" type="button">
+                                    <span class="big">вызнвать</span>
+                                    <span>замерщика</span>
+                                </button>
+                            </div>
+
+                            <a href="" class="banner_arrea">
+                                <div class="bl_wrappen">
+                                    <p class="banner_arrea__big">Банерная <span>область</span></p>
+                                </div>
+                            </a>
+                            <div class="banner_zone__first">
+                                <p class="banner_zone__text">Телефон горячей линии  </p>
+                                <a class="banner_zone__tel" href="tel: +380674027101">+38(067) 402 71 01</a>
+                                <p class="banner_zone__data">(пн.- пт. с 9.00 до 18.00)</p>
+                                <button class="banner_zone__callMaster" type="button">
+                                    <span class="big">вызнвать</span>
+                                    <span>замерщика</span>
+                                </button>
+                            </div>
+
+                            <a href="" class="banner_arrea">
+                                <div class="bl_wrappen">
+                                    <p class="banner_arrea__big">Банерная <span>область</span></p>
+                                </div>
+                            </a>
+
+
                         </div>
                     </div>
                 </div>
@@ -141,58 +432,48 @@
 
         </div>
 
-
     </div>
 </main>
 <!-- ---------------------------------------- FOOTER --------------------------------------------------------- -->
 <footer class="footer">
+    <div class="bl_global2">
+        <div class="footer_line">
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="footer_copiraite">
+                        <span class="footer_copiraite__text">Nakitel ©2014</span>
+                    </div>
 
-</footer>
 
-<div class="blackWrapper hidden"></div>
-
-
-<!-- ANCOR -->
-
-<div class="bl_ancor hidden-xs hidden">
-    <div class="bl_wrappen">
-        <a class="bl_ancor__link bl_ancor__icon" href="#header">Вверх</a>
-    </div>
-</div>
-
-<!-- POPUP BIFORE ADD TO SHOPBAG-->
-
-<div class="popup_likeShopbag hidden">
-    <div class="wrapperBlock">
-        <button class="popup_likeShopbag__close">
-            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
-        </button>
-        <p class="popup_likeShopbag__text popup_likeShopbag__text_main">Подтверждение</p>
-
-        <div class="popup_likeShopbag__product">
-            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываыва
-                ываыва</p>
-        </div>
-        <p class="popup_likeShopbag__text  popup_likeShopbag__text_main">добавлен в корзину</p>
-
-        <div class="popup_likeShopbag__buttons">
-            <button class="button_buyProduct popup_likeShopbag__continueBuying">
-                <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
-            </button>
-            <div class="button_buyProduct popup_likeShopbag__goToShopbag">
-                <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
+                    <nav class="footer_navigation hidden-xs">
+                        <ul class="footer_navigation__full">
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Контакты</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Акциия</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Каталог</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#"
+                                                                   class="footer_navigation__link">Оплата / Доставка</a>
+                            </li>
+                            <li class="footer_navigation__item"><a href="#" class="footer_navigation__link">Гаранти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-
     </div>
+</footer>
+
+<div class="for_bombed">
+    <img src="https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/smiles/relax.jpg?raw=true" alt="relax">
+    <a  href="mailto:zirkaandry@ukr.net"> Write to me, I will give you a microscope</a>
 </div>
 
-
 <script src="libs/jquery.min.js"></script>
-
 <script src="js/libs.min.js"></script>
-
-<script src="js/common.min.js"></script>
+<script src="js/common.min.js" async></script>
 
 </body>
 

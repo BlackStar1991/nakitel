@@ -5,25 +5,199 @@
 
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
+  .bl_basket {
+    left: 0;
+  }
+  .bl_bigBasket__text, .bl_basket__text {
+    float: none;
+  }
+
+  .bl_banner__text {
+    font-size: 66px;
+  }
 
 }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .header {
+    position: fixed;
+    z-index: 4;
+  }
+  .bl_basket {
+    width: 152px;
+  }
+
+  .button_navigation {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+  }
+
+  .bl_banner__text {
+    font-size: 48px;
+  }
+
+  .bl_global__inner {
+    margin-top: 55px;
+  }
+
+  .bl_controls__registration {
+    margin-top: 10px;
+  }
+
+  .bl_search {
+    float: none;
+  }
+  .bl_language {
+    float: none;
+  }
+
+  .mob_controls {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bl_ceo__wrapper {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .bl_ceo__showMore {
+    display: block;
+  }
+
+  .banner_zone__first {
+    text-align: center;
+  }
+
+  .bl_global2 {
+    min-height: 160px;
+    margin-top: 20px;
+  }
+
+  .bl_navigation__full{
+    top: 56px;
+    left: -16px;
+  }
+
+
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
+
+  .bl_search {
+    position: fixed;
+    top: 48px;
+    left: -100%;
+  }
+
+  .btn_search__mobile {
+    display: block;
+  }
+
+  .bl_global__inner {
+    display: block;
+  }
+
+  .bl_controls {
+
+    text-align: center;
+    margin: 10px auto;
+  }
+  .bl_controls__enter {
+    padding-top: 18px;
+  }
+
+  .bl_information {
+    margin: 0 auto;
+  }
+
+  .bl_banner__text {
+    font-size: 6vw;
+    height: 50px;
+  }
+
+
+  .footer_copiraite {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_navigation {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_navigation__item {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .bl_logo__img {
+    width: 10%;
+  }
+
+  .bl_logo__title {
+    font-size: 35px;
+  }
+
+  .bl_information__button {
+    display: none;
+  }
+
+  .bl_aboutCompany__link {
+    text-align: center;
+  }
 
 }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
 
+  .btn_search__mobile {
+    order: 3;
+  }
+
+  .bl_language {
+    display: none;
+  }
+
+  .bl_banner__text {
+    height: 30px;
+  }
 }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {
 
+}
+@media only screen and (max-width: 250px) {
+ .header,div:not(.for_bombed){
+    display: none;
+  }
+.for_bombed{
+  display: block!important;
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #000;
+  img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  a{
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
 }
